@@ -30,16 +30,23 @@ html, body {
 	min-height: 600px;
 }
 
+.intro body {
+	background:url( "../../images/background.jpg");
+	background-position: center;
+	background-size: 90%;
+	background-repeat: no-repeat;
+}
+
 body {
 	position: relative;
 	padding: 0;
 	margin: 0;
 	overflow: hidden;
 	
-	font-family: 'Lato', Times, 'Times New Roman', serif;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 36px;
-	font-weight: 200;
-	letter-spacing: -0.02em;
+	font-weight: 100;
+	letter-spacing: 0.035em;
 	color: #eee;
 
 	background: #1c1e20;
@@ -82,6 +89,16 @@ body {
 .reveal h4.inverted {
 	color: #fff;
 	text-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+}
+
+.reveal h2.normal,
+.reveal h3.normal,
+.reveal h4.normal {
+	margin: 5px 0px 5px 0px;
+}
+
+.reveal img.normal {
+	margin: 5px 0px 5px 0px;
 }
 
 .reveal h1 {
@@ -136,12 +153,24 @@ body {
 	font-style: italic;
 }
 
-.reveal ol, 
-.reveal ul {
-	display: inline-block;
+.reveal li {
+	margin: 10px;
+}
 
+.reveal ol, 
+.reveal ul,
+.reveal dl {
+	display: inline-block;
 	text-align: left;
 	margin: 0 auto;
+}
+
+.reveal dl dt {
+	
+}
+
+.reveal dl dd {
+	margin-left: 2em;
 }
 
 .reveal ol {
@@ -149,15 +178,15 @@ body {
 }
 
 .reveal ul {
-	list-style-type: disc;
+	list-style-type: none;
 }
 
 .reveal ul ul {
-	list-style-type: square;
+	list-style-type: none;
 }
 
 .reveal ul ul ul {
-	list-style-type: circle;
+	list-style-type: none;
 }
 
 .reveal ul ul,
@@ -191,9 +220,13 @@ body {
 	}
 
 .reveal pre {
+	display: none;
+}
+
+.reveal section.present pre {
 	display: block;
-	position: relative;
-	width: 90%;
+	position: absolute;
+	width: 100%;
 	margin: 10px auto;
 
 	text-align: left;
@@ -447,7 +480,7 @@ body {
 	width: 1080px;
 	height: 600px;
 	
-	left: 50%;
+	left: 46%;
 	top: 50%;
 	margin-left: -500px;
 	margin-top: -320px;
